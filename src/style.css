@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #DADDD8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Horizontally center everything */
+  align-items: center; /* Vertically center everything */
+  height: 100vh;
+  position: relative; /* Required for absolute positioning of the image */
+}
+
+/* Add your image path here */
+body::after {
+  content: '';
+  background-image: url('logo.png');
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: 100px; /* Set the size of the background image */
+  background-position: bottom right; /* Position the background image at the bottom right corner */
+  position: absolute; /* Position the image relative to the body */
+  bottom: 10px; /* 10px from the bottom */
+  right: 10px; /* 10px from the right */
+}
+
+
+.container {
+  max-width: 400px;
+  background-color: #646C56;
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
